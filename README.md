@@ -8,5 +8,5 @@ Just use Interface Builder
 
 ![Interface Builder][img2]
 
-[img1]:https://raw.github.com/mattlawer/DotsLoader/demo.gif
-[img2]:https://raw.github.com/mattlawer/DotsLoader/interfacebuilder.png
+[img1]:https://github.com/mattlawer/DotsLoader/raw/master/demo.gif
+[img2]:https://github.com/mattlawer/DotsLoader/raw/master/interfacebuilder.png
