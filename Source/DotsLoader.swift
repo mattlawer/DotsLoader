@@ -64,12 +64,9 @@ class DotsLoader : UIView {
         let center = CGPoint(x: self.frame.size.width/2.0, y: self.frame.size.height/2.0)
         let even = (dotsCount % 2 == 0)
         let middle :Int = dotsCount/2
-        for i in 0..<dotsCount {
-            if dotLayers.count > i {
-                let layer = dotLayers[i]
-                let x = center.x+CGFloat(i-middle)*((dotsRadius*2)+dotsSpacing)+(even ? (dotsRadius+(dotsSpacing/2)) : 0)
-                layer.position = CGPoint(x: x, y: center.y)
-            }
+        for (index, layer) in dotLayers.enumerated() {
+            let x = center.x+CGFloat(index-middle)*((dotsRadius*2)+dotsSpacing)+(even ? (dotsRadius+(dotsSpacing/2)) : 0)
+            layer.position = CGPoint(x: x, y: center.y)
         }
         startAnimating()
     }
